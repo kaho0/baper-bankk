@@ -12,12 +12,12 @@ document.getElementById('btn-deposit').addEventListener('click',function(){
     depositTotalElement.innerText=currentDepositTotal;
     
     const balanceTotalElement=document.getElementById('balance-total');
-    const prevBalanceTotalString=balanceTotalElement.innerText;
-    const prevBalanceTotal=parseFloat(prevBalanceTotalString);
+    const previousBalanceTotalString=balanceTotalElement.innerText;
+    const previousBalanceTotal=parseFloat(previousBalanceTotalString);
 
-    const currentBalanceTotal=prevBalanceTotal+newDepositAmount;
+    const currentBalanceTotal=previousBalanceTotal+newDepositAmount;
     balanceTotalElement.innerText=currentBalanceTotal;
 
-    depositField.value=' ';
+    depositField.value='';
     
 })
